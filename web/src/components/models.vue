@@ -17,6 +17,9 @@ const onModelSelect = (val: any) => {
 
 onMounted(async () => {
   await listModels();
+  console.log('Model: ');
+  console.log(appStore);
+  console.log(models.value);
   if (appStore.model) {
     model.value = appStore.model;
   } else {

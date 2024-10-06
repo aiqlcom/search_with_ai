@@ -15,6 +15,7 @@ export class BaseOpenAIChat implements BaseChat {
       });
     } else if (platform === 'moonshot') {
       this.openai = new OpenAI({ baseURL, apiKey: "" });
+      console.log('[Moonshot AI loaded]');
     }
   }
 

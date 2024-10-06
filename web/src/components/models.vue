@@ -23,7 +23,7 @@ onMounted(async () => {
   if (appStore.model) {
     model.value = appStore.model;
   } else {
-    model.value = models.value[1];
+    model.value = models.value[0];
   }
   appStore.updateModel(model.value);
 });
@@ -34,7 +34,9 @@ async function listModels () {
   const keys = Object.keys(res);
   const values: string[] = [];
   keys.forEach((key) => {
+    
     const vals = res[key] as string[];
+    console.log(vals);
     values.push(...vals.map(i => `${key}:${i}`));
   });
 

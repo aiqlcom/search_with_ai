@@ -2,7 +2,7 @@
   <div id="home" class="flex size-full items-center justify-center dark:bg-black">
     <div class="mt-36 flex w-full flex-col gap-4 p-4 sm:-mt-28 lg:max-w-3xl xl:max-w-4xl">
       <div class="flex items-center justify-center gap-2">
-        <span class="text-3xl font-bold text-100">AI Search</span>
+        <span class="text-3xl font-bold text-gray-100">AI Search</span>
         <t-tag variant="light" class="text-xs text-gray-500">beta</t-tag>
       </div>
       <SearchInputBar :autofocus="true" :loading="false" @search="search" />

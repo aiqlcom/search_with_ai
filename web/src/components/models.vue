@@ -23,7 +23,7 @@ onMounted(async () => {
   if (appStore.model) {
     model.value = appStore.model;
   } else {
-    model.value = models.value[0];
+    model.value = models.value[1];
   }
   appStore.updateModel(model.value);
 });

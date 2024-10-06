@@ -14,7 +14,7 @@ export class BaseOpenAIChat implements BaseChat {
         apiKey,
       });
     } else if (platform === 'moonshot') {
-      this.openai = new OpenAI({ baseURL });
+      this.openai = new OpenAI({ baseURL, apiKey: "" });
     }
   }
 

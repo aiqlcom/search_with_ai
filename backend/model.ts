@@ -29,7 +29,7 @@ export const Models: IModelInfo[] = [
   {
     platform: 'moonshot',
     type: 'openai',
-    models: ['moonshot-v1-8k', 'moonshot-v1-32k', 'moonshot-v1-128k']
+    models: ['Qwen/Qwen2.5-72B-Instruct', 'meta-llama/Meta-Llama-3.1-70B-Instruct', 'mistralai/Mistral-Nemo-Instruct-2407']
   },
   {
     platform: 'lepton',

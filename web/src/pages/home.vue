@@ -35,7 +35,7 @@
 import router from '../router';
 import { RiSearch2Line } from '@remixicon/vue';
 import { PageFooter, SearchInputBar, SearCategory, SearchMode } from '../components';
-import logoUrl from '../assets/logo.png';
+// import logoUrl from '../assets/logo.png';
 import { useI18n } from 'vue-i18n';
 import { computed } from 'vue';
 import { useAppStore } from '../store';

@@ -2,8 +2,8 @@ import { defineStore } from 'pinia';
 import { Provider, TSearCategory, TSearchEngine, TSearchMode } from 'src/interface';
 import { ref } from 'vue';
 
-type Theme = 'dark' | 'light'
-type Lan = 'zh' | 'en' | 'ptBR';
+type Theme = 'light' | 'dark'
+type Lan = 'en' | 'zh' | 'ptBR';
 export const useAppStore = defineStore('app', () => {
   const engine = ref<TSearchEngine>('SEARXNG');
   const model = ref('');

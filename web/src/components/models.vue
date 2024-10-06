@@ -37,7 +37,7 @@ async function listModels () {
     
     const vals = res[key] as string[];
     console.log(vals);
-    values.push(...vals.map(i => `${key}:${i}`));
+    // values.push(...vals.map(i => `${key}:${i}`));
   });
 
   models.value = values;
